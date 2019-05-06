@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--The Blue Marble-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="The Blue Marble" id="BYZ-38-t0r" customClass="ViewController" customModule="Image_Resizing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" layoutMarginsFollowReadableWidth="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="inm-F8-46a">
+                                <rect key="frame" x="20" y="108" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="inm-F8-46a" secondAttribute="height" multiplier="1:1" id="An2-iu-pfu"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvO-Uv-Oih" userLabel="Body Text View">
+                                <rect key="frame" x="20" y="506.5" width="374" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Zm3-uQ-mPv"/>
+                                    <constraint firstAttribute="height" constant="230" id="qZF-Ss-68d"/>
+                                </constraints>
+                                <string key="text">Over a period of six orbits on on February 3, 2012, the recently launched Suomi NPP satellite provided the Visible Infrared Imaging Radiometer Suite (VIIRS) instrument enough time to gather the pixels for this synthesized view of Earth showing North Africa and southwestern Europe.</string>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Zm3-uQ-mPv"/>
+                                        <exclude reference="qZF-Ss-68d"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Zm3-uQ-mPv"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="qZF-Ss-68d"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJN-3l-OG6" userLabel="Footnote Text View">
+                                <rect key="frame" x="20" y="724" width="374" height="118"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Credit: Image by Norman Kuring, NASA GSFC, using data from the VIIRS instrument aboard Suomi NPP. 
+(https://visibleearth.nasa.gov/view.php?id=78314)</string>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="inm-F8-46a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Wl-Q2-8na"/>
+                            <constraint firstItem="cvO-Uv-Oih" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2jr-0D-qJX"/>
+                            <constraint firstItem="cvO-Uv-Oih" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="614-3v-QkQ"/>
+                            <constraint firstItem="gJN-3l-OG6" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="Als-w9-8bX"/>
+                            <constraint firstItem="gJN-3l-OG6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Byy-jK-Fw1"/>
+                            <constraint firstItem="cvO-Uv-Oih" firstAttribute="firstBaseline" secondItem="inm-F8-46a" secondAttribute="bottom" constant="24.5" symbolType="layoutAnchor" id="GAq-QQ-ugO"/>
+                            <constraint firstItem="inm-F8-46a" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NoI-SP-9J7"/>
+                            <constraint firstItem="cvO-Uv-Oih" firstAttribute="centerY" secondItem="inm-F8-46a" secondAttribute="centerY" id="St9-3v-HSJ"/>
+                            <constraint firstItem="gJN-3l-OG6" firstAttribute="firstBaseline" secondItem="cvO-Uv-Oih" secondAttribute="baseline" constant="17.5" symbolType="layoutAnchor" id="anU-oV-FJ4"/>
+                            <constraint firstItem="inm-F8-46a" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="ceo-a1-TY5"/>
+                            <constraint firstItem="gJN-3l-OG6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cm0-Xi-RwS"/>
+                            <constraint firstItem="inm-F8-46a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="cmx-Ep-oRR"/>
+                            <constraint firstItem="inm-F8-46a" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oOJ-JX-Ylc"/>
+                            <constraint firstItem="gJN-3l-OG6" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="s77-WN-Wvt"/>
+                            <constraint firstItem="cvO-Uv-Oih" firstAttribute="leading" secondItem="inm-F8-46a" secondAttribute="trailing" constant="20" id="wx2-c6-K4C"/>
+                        </constraints>
+                        <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+                        <viewLayoutGuide key="safeArea" id="iSV-d4-x2K"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gJN-3l-OG6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1Wl-Q2-8na"/>
+                                <exclude reference="NoI-SP-9J7"/>
+                                <exclude reference="ceo-a1-TY5"/>
+                                <exclude reference="cmx-Ep-oRR"/>
+                                <exclude reference="oOJ-JX-Ylc"/>
+                                <exclude reference="2jr-0D-qJX"/>
+                                <exclude reference="614-3v-QkQ"/>
+                                <exclude reference="GAq-QQ-ugO"/>
+                                <exclude reference="St9-3v-HSJ"/>
+                                <exclude reference="wx2-c6-K4C"/>
+                                <exclude reference="Als-w9-8bX"/>
+                                <exclude reference="Byy-jK-Fw1"/>
+                                <exclude reference="anU-oV-FJ4"/>
+                                <exclude reference="cm0-Xi-RwS"/>
+                                <exclude reference="s77-WN-Wvt"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="2jr-0D-qJX"/>
+                                <include reference="GAq-QQ-ugO"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="NoI-SP-9J7"/>
+                                <include reference="cmx-Ep-oRR"/>
+                                <include reference="oOJ-JX-Ylc"/>
+                                <include reference="614-3v-QkQ"/>
+                                <include reference="Als-w9-8bX"/>
+                                <include reference="Byy-jK-Fw1"/>
+                                <include reference="anU-oV-FJ4"/>
+                                <include reference="cm0-Xi-RwS"/>
+                                <include reference="s77-WN-Wvt"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="NoI-SP-9J7"/>
+                                <include reference="ceo-a1-TY5"/>
+                                <include reference="cmx-Ep-oRR"/>
+                                <include reference="614-3v-QkQ"/>
+                                <include reference="St9-3v-HSJ"/>
+                                <include reference="wx2-c6-K4C"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="cvO-Uv-Oih"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1Wl-Q2-8na"/>
+                                <exclude reference="NoI-SP-9J7"/>
+                                <include reference="ceo-a1-TY5"/>
+                                <exclude reference="oOJ-JX-Ylc"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <exclude reference="Als-w9-8bX"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="gJN-3l-OG6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="imageView" destination="inm-F8-46a" id="iVg-Yf-BNv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.883928571428569" y="20.289855072463769"/>
+        </scene>
+    </scenes>
+</document>
